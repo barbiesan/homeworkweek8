@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %} Kekambas Blog | Home {% endblock %}
+
+{% block content %}
+<h1>Hello  how are you?</h1>
+            
+<h4>My favorite colors:</h4>
+<ul>
+    {% for post in posts %}
+        <li>{{ post.title }}</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
